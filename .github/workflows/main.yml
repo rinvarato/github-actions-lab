@@ -1,0 +1,15 @@
+name: Prueba de Agente Local
+on: [push]
+
+jobs:
+  test-local:
+    runs-on: self-hosted  # <--- Esto le dice a GitHub que busque tu PC
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: ¿Dónde estoy?
+        run: |
+          echo "Ejecutando en el usuario: $(whoami)"
+          echo "Mi sistema operativo es:"
+          uname -a

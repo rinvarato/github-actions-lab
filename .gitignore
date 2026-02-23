@@ -1,0 +1,20 @@
+# Docker Compose artifacts
+.env
+!.env.example
+
+# Docker
+.docker/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+nohup.out
+*.log
